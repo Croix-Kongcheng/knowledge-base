@@ -1,0 +1,11 @@
+.member-avatar-button{display:inline-flex;flex-shrink:0;border:0;padding:0;background:transparent;border-radius:50%;cursor:zoom-in;vertical-align:middle}
+.member-avatar-button:hover{box-shadow:0 0 0 3px color-mix(in srgb,var(--accent,#8670e5) 35%,transparent)}
+.member-avatar-button:focus-visible{outline:2px solid var(--accent,#8670e5);outline-offset:4px}
+.av-backdrop{position:fixed;inset:0;z-index:1500;display:grid;grid-template-columns:minmax(0,1fr);place-items:center;overflow:auto;overscroll-behavior:contain;padding:16px;background:#0d1016d9;backdrop-filter:blur(6px)}
+.av-dialog{width:552px;max-width:100%;min-width:0;background:var(--surface,#fff);border:1px solid var(--border,#e8e3ee);border-radius:16px;box-shadow:0 24px 80px #0005;color:var(--text-primary,#343447);overflow:hidden}
+.av-dialog header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:1px solid var(--border,#e8e3ee)}
+.av-dialog h2{min-width:0;margin:0;font-size:15.5px;font-weight:600;line-height:1.6;overflow-wrap:anywhere}
+.av-dialog header button{flex-shrink:0}
+.av-image-area{display:grid;place-items:center;min-height:120px;padding:16px}
+.av-image-area img{display:block;width:100%;max-width:512px;max-height:calc(100dvh - 132px);object-fit:contain;border-radius:8px}
+.av-image-area p{margin:24px 0;max-width:30em;font-size:14px;line-height:1.8;color:var(--text-muted,#9292a1);overflow-wrap:anywhere}

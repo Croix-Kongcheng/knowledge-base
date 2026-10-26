@@ -1,0 +1,19 @@
+[Unit]
+Description=Zhiyu shared knowledge base
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/knowledge-base
+Environment=NODE_ENV=production
+Environment=HOST=0.0.0.0
+Environment=PORT=5173
+Environment=DATA_DIR=/var/lib/knowledge-base
+ExecStart=/usr/bin/node /opt/knowledge-base/server/index.mjs
+UMask=0077
+Restart=always
+RestartSec=3
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

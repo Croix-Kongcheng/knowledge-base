@@ -1,0 +1,48 @@
+{
+  "name": "zhiyu-knowledge-base",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "npm run build && npm run test:api && npm run test:ui",
+    "start": "node server/index.mjs",
+    "server:dev": "node --watch server/index.mjs",
+    "test:api": "node --test server/*.test.mjs tests/server/*.node.mjs",
+    "test:ui": "playwright test"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.11.1",
+    "@codemirror/lang-markdown": "^6.5.2",
+    "@codemirror/language": "^6.13.1",
+    "@codemirror/state": "^6.7.6",
+    "@codemirror/view": "^6.43.15",
+    "@lezer/highlight": "^1.2.5",
+    "@lezer/markdown": "^1.8.1",
+    "echarts": "^6.1.0",
+    "jszip": "^3.10.1",
+    "katex": "^0.19.1",
+    "lucide-react": "^0.468.0",
+    "mdast-util-from-markdown": "^2.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.3",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.0",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.7"
+  }
+}
