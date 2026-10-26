@@ -1,0 +1,49 @@
+# Dependencies and generated output
+node_modules/
+/node_modules
+dist/
+build/
+coverage/
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+# Private application data, uploads, screenshots, and backups
+data/
+artifacts/
+backups/
+uploads/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.backup
+*.bak
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Local secrets and deployment settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+*secrets*.json
+.npmrc
+.netrc
+.ssh/
+.config/
+*.local
+*.local.*
+*.log
+
+# Editor, operating system, and agent state
+.DS_Store
+.idea/
+.vscode/
+.codex/
